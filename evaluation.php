@@ -11,4 +11,14 @@
 </head>
 <body>
 
+    <div class="container mt-3">
+        <h2>Three Unequal Columns</h2>
+        <p>To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:</p>
+        <div class="row">
+            <div class="col-md-3 bg-success">.col-3</div>
+            <div class="col-md-6 bg-warning">.col-6</div>
+            <div class="col-md-3 bg-success">.col-3</div>
+        </div>
+    </div>
+    
 </body>
