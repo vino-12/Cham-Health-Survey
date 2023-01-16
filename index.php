@@ -10,14 +10,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div class="p-5 header text-white text-center">
+	<div class="p-5 header bg-info text-white text-center">
 		<h1>FITANDWELL.CH</h1>
 	</div>
 
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark  p-0 m-0">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 m-0">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#">
-				<img src="img/fit-and-well-high-resolution-logo-white-on-black-background.png" alt="Logo" class="logo p-0 m-0">
+				<img src="img/fit-and-well-high-resolution-logo-white-on-transparent-background.png" alt="Logo" class="logo p-0 m-0">
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
 				<span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
 	</nav>
 	<div class="container mt-3 pt-5">
 		<div class="row">
-			<div class="col-sm-12 text-bg-info p-3">
+			<div class="col-sm-12 bg-info text-white text-center p-3">
 				Question One
 			</div>
 		</div>
@@ -79,8 +79,16 @@
 			</div>
 		</div>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
-  	<div class="container-fluid">
-    	<a class="navbar-brand" href="#">Fixed bottom</a>
+		<div class="container-fluid text-white justify-content-left">dd</div>
+  	<div class="container-fluid justify-content-center">
+		<a class="navbar-brand" href="#">
+				<img src="img/fit-and-well-high-resolution-logo-white-on-transparent-background.png" alt="Logo" class="logo p-0 m-0">
+			</a>
   	</div>
+		<div class="container-fluid text-white text-end">
+			<p class="text-end">
+				dd
+			</p>
+		</div>
 	</nav>
 </body>
