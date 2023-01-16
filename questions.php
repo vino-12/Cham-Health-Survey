@@ -10,6 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+
+	<?php
+	include 'data-collector.php';
+	?>
+
+
 	<div class="p-5 header bg-info text-white text-center">
 		<h1>FITANDWELL.CH</h1>
 	</div>
@@ -64,13 +71,13 @@
 			</div>
 		</div>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
-		<div class="container-fluid text-white justify-content-left copyright">¢ fitnadwell.ch</div>
+		<div class="container-fluid text-white justify-content-left copyright">©fitnadwell.ch</div>
   	<div class="container-fluid justify-content-center">
 		<a class="navbar-brand" href="#">
 				<img src="img/fit-and-well-high-resolution-logo-white-on-transparent-background.png" alt="Logo" class="logo p-0 m-0">
 			</a>
   	</div>
-		<div class="container-fluid text-white text-end">
+		<div class="container-fluid text-white float-end">ff
 		</div>
 	</nav>
 </body>

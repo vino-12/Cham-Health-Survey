@@ -10,8 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+	<?php
+	/* initialisiere die Session. Auf der Index-Seite, welche die erste Frage und damit den Beginn der Umfrage anzeigt, sollen alle vorherigen Daten gelöscht werden.
+	*/
+	session_start();
+	session_destroy();
+
+	include 'php/header.php';
+
+	?>
+
 	<div class="p-5 header bg-info text-white text-center">
-		<h1>FITANDWELL.CH</h1>
+		<h1>
+			FITANDWELL.CH
+		</h1>
 	</div>
 
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0 m-0">
@@ -24,7 +36,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="mynavbar">
 				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
+					<li class="nav-item">"
 						<a class="nav-link" href="javascript:void(0)">Link</a>
 					</li>
 					<li class="nav-item">
@@ -44,15 +56,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 bg-secondary text-white p-3, border-right">
+			<div class="col-md-6 bg-secondary text-white p-3 border-right">
 				How healthy are you physically? 
 			</div>
 			<div class="col-md-6 bg-secondary text-white p-3">
-				<form action="/action_page.php">
+
+				<form action="question-2.php">
 					<label for="customRange" class="form-label">
 						coose a value from 1 to 5
 					</label>
 					<input type="range" class="form-range" id="customRange" step="25" name="points">
+					<input type="hidden" name="lastPageID" value="question-1">
 						<div class="container p-0 m-0">
 							<div class="row fontSizeRange p-0 m-0">
 								<div class="col-2 text-left rangeSteps">
@@ -75,7 +89,8 @@
 					<button type="submit" class="btn btn-primary mt-3">
 							Submit
 					</button>
-				</form>        
+				</form>  
+
 			</div>
 		</div>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
@@ -91,4 +106,7 @@
 			</p>
 		</div>
 	</nav>
+	<?php 
+		include includes/footer.php;
+	?>	
 </body>
