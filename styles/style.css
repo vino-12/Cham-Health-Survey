@@ -16,6 +16,10 @@
     color: rgb(154, 53, 53);
   }
 
+  .logo {
+    height: 58px;
+  }
+
   .fontSizeRange {
     font-size: 10px;
   }
