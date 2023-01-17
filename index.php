@@ -29,7 +29,7 @@
 				Question One
 			</div>
 		</div>
-		<div class="row">
+		<div class="row text-center">
 			<div class="col-md-6 bg-secondary text-white p-3 border-right">
 				How healthy are you physically? 
 			</div>
@@ -44,25 +44,25 @@
 					<input type="hidden" name="lastPageID" value="question-1">
 						<div class="container p-0 m-0">
 							<div class="row fontSizeRange p-0 m-0">
-								<div class="col-2 text-left rangeSteps">
-										unhealthy
+								<div class="col-2 text-left rangeStep1">
+										couch<br>potato
 								</div>	
-								<div class="col-3 text-left">
-										so-so-no-so
+								<div class="col-3 text-left rangeStep2">
+										so-so<br>no-so
 								</div>
-								<div class="col-2 text-center">
+								<div class="col-2 text-center rangeStep3">
 										average Joe
 								</div>
-								<div class="col-3 text-center">
-										doin' aight'
+								<div class="col-3 text-center rangeStep4">
+										aight'<br>I guess
 								</div>
-								<div class="col-2 text-right pr-0 mr-0">
-										machine!
+								<div class="col-2 text-right pr-0 mr-0 rangeStep5">
+									Quite	a<br>machine!
 								</div>
 							</div>
 						</div>
 					<button type="submit" class="btn btn-primary mt-3">
-							Submit
+							Next
 					</button>
 				</form>  
 
