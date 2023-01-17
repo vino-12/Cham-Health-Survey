@@ -27,8 +27,8 @@ include "data-collector.php";
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
-				Question Five
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
+				Question Six
 			</div>
 		</div>
 
@@ -52,6 +52,8 @@ include "data-collector.php";
 						<label class="form-check-label" for="q6Num">
 						</label>
 					</div>
+
+					<input type="hidden" name="lastPageID" value="question-6">
 					
 					<button type="submit" class="btn btn-primary mt-3">
 							Next

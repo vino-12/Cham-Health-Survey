@@ -28,7 +28,7 @@ include "data-collector.php";
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
 			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
-				Question Three
+				Question Five
 			</div>
 		</div>
 
@@ -37,7 +37,7 @@ include "data-collector.php";
 
 			<!-- ====== question-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3 border-right">
-				How important is physical activity to you?
+				Do you feel you do too little, just enough or way too much additional physical activity?
 			</div>
 
 			<!-- ====== form-col ====== -->

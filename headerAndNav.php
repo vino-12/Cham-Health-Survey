@@ -1,7 +1,7 @@
 <div class="p-5 header bg-info text-white text-center">
 	<h1>
 		FITANDWELL.CH
-	</h1>points
+	</h1>
 </div>
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
@@ -17,10 +17,10 @@
 		<!-- right aligned nav-links-->
 		<ul class="navbar-nav ms-auto">
 			<li class="nav-item">
-				<a class="nav-link text-light" href="index.php">Start Survey</a>
+				<a class="nav-link text-light bgStart" href="index.php">Start Survey</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link text-light" href="javascript:void(0)">Previous</a>
+			<li class="nav-item bgPrev">
+				<a class="nav-link text-light" href="javascript:void(0)" onclick="history.back()">Previous</a>
 			</li>
 		</ul>
 	</div>

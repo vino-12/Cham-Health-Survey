@@ -27,7 +27,7 @@ include "data-collector.php";
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
 				Question Nine
 			</div>
 		</div>
@@ -36,7 +36,7 @@ include "data-collector.php";
 		<div class="row text-center">
 
 			<!-- ====== question-col ====== -->
-			<div class="col-md-6 bg-secondary text-white p-3, border-right">
+			<div class="col-md-6 bg-secondary text-white p-3 border-right">
 				On a typical day, how many of your meals or snacks contain fruit?
 			</div>
 
@@ -52,6 +52,8 @@ include "data-collector.php";
 						<label class="form-check-label" for="q9Num">
 						</label>
 					</div>
+
+					<input type="hidden" name="lastPageID" value="question-9">
 					
 					<button type="submit" class="btn btn-primary mt-3">
 							Next

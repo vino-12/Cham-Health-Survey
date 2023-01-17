@@ -56,6 +56,13 @@ color:chartreuse;
   justify-content: space-between;
 }
 
+.bgStart {
+  background-color:rgb(39, 39, 249);
+}
+.bgPrev {
+  background-color:darkblue;
+}
+
 body, html {
   height: 100%;
   margin: 0;
