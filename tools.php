@@ -1,8 +1,12 @@
 <?php
 
 function prettyPrint($a) {
-    echo '<pre>';
+    echo '<span>';
     print_r($a);
-    echo '</pre>';
+    echo '</span>';
+
+    //echo '<pre>';
+    //print_r($a);
+    //echo '</pre>';
     
 }

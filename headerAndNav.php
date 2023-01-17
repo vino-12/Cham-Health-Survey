@@ -17,7 +17,7 @@
 		<!-- right aligned nav-links-->
 		<ul class="navbar-nav ms-auto">
 			<li class="nav-item">
-				<a class="nav-link text-light" href="javascript:void(0)">Start Survey</a>
+				<a class="nav-link text-light" href="index.php">Start Survey</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link text-light" href="javascript:void(0)">Previous</a>

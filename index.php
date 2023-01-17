@@ -27,7 +27,7 @@
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
 				Question One
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 					<input type="range" class="form-range" id="customRange" step="25" name="answer-1">
 
 					<input type="hidden" name="lastPageID" value="question-1">
-					
+
 					<div class="container p-0 m-0">
 						<div class="row fontSizeRange p-0 m-0">
 							<div class="col-2 text-left rangeStep1">
