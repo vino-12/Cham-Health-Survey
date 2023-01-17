@@ -19,6 +19,6 @@ if (isset($_POST["lastPageID"])) {
 }
 
 // DEVONLY: gib die aktuelle $_SESSION in die Seite aus. prettyPrint() ist nur zum testen da.
-// prettyPrint($_SESSION);
+prettyPrint($_SESSION);
 
 ?>

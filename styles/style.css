@@ -19,6 +19,14 @@ font-style: italic;
 color:chartreuse;
 }
 
+.radioYes {
+  color:chartreuse
+}
+
+.radioNo {
+  color:red
+}
+
 .heroFontSize {
   font-size: 50px;
 }

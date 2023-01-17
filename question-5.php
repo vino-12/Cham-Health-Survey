@@ -45,26 +45,16 @@ include "data-collector.php";
 
 				<!-- ====== form start ====== -->
 				<form action="question-3.php" class="text-center" method="post">
-
 					<div class="form-check text-start">
-						
-						<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1" checked>
-							Yes
+						<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1" checked>Yes
 						<label class="form-check-label radioYes" for="radio1">
 						</label>
-
 					</div>
-
 					<div class="form-check text-start">
-						
 						<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
 						<label class="form-check-label radioNo" for="radio2">
 						</label>
-
 					</div>
-
-					<input type="hidden" name="lastPageID" value="question-2">
-
 					<button type="submit" class="btn btn-primary mt-3">
 							Next
 					</button>
