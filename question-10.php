@@ -28,7 +28,7 @@ include "data-collector.php";
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
 			<div class="col-sm-12 bg-info text-white text-center p-3">
-				Question Two
+				Question Ten
 			</div>
 		</div>
 
@@ -37,24 +37,22 @@ include "data-collector.php";
 
 			<!-- ====== question-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3, border-right">
-				Do you take nutritional supplements?
+				On a typical day, how many of your meals are microwaved or prepared?
 			</div>
 
 			<!-- ====== form-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3 text-center">
 
 				<!-- ====== form start ====== -->
-				<form action="question-3.php" class="text-center" method="post">
+				<form action="evaluation.php" class="text-center" method="post">
+
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1" checked>Yes
-						<label class="form-check-label radioYes" for="radio1">
+
+						<input type="text" class="form-check-input text-center" id="q10Num" name="inputNum" value="" checked>please enter a number
+						<label class="form-check-label" for="q10Num">
 						</label>
 					</div>
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
-						<label class="form-check-label radioNo" for="radio2">
-						</label>
-					</div>
+					
 					<button type="submit" class="btn btn-primary mt-3">
 							Next
 					</button>

@@ -27,8 +27,8 @@ include "data-collector.php";
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
-				Question Two
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
+				Question Three
 			</div>
 		</div>
 
@@ -36,29 +36,45 @@ include "data-collector.php";
 		<div class="row text-center">
 
 			<!-- ====== question-col ====== -->
-			<div class="col-md-6 bg-secondary text-white p-3, border-right">
-				Do you take nutritional supplements?
+			<div class="col-md-6 bg-secondary text-white p-3 border-right">
+				How important is physical activity to you?
 			</div>
 
 			<!-- ====== form-col ====== -->
-			<div class="col-md-6 bg-secondary text-white p-3 text-center">
+			<div class="col-md-6 bg-secondary text-white p-3">
 
 				<!-- ====== form start ====== -->
-				<form action="question-3.php" class="text-center" method="post">
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1" checked>Yes
-						<label class="form-check-label radioYes" for="radio1">
-						</label>
-					</div>
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">No
-						<label class="form-check-label radioNo" for="radio2">
-						</label>
-					</div>
+				<form action="question-6.php" method="post">
+					<label for="customRange" class="form-label">
+						Please choose 1 of these 5 answers:
+					</label>
+					<input type="range" class="form-range" id="customRange" step="25" name="answer-5">
+
+					<input type="hidden" name="lastPageID" value="question-5">
+
+						<div class="container p-0 m-0">
+							<div class="row fontSizeRange p-0 m-0">
+								<div class="col-2 text-left rangeStep1">
+									way too<br> little
+								</div>	
+								<div class="col-3 text-left rangeStep2">
+									could<br>be more
+								</div>
+								<div class="col-2 text-center rangeStep3">
+										just right
+								</div>
+								<div class="col-3 text-center rangeStep4">
+										I should<br>slow down
+								</div>
+								<div class="col-2 text-right pr-0 mr-0 rangeStep5">
+									I'm a<br>fitness addict!
+								</div>
+							</div>
+						</div>
 					<button type="submit" class="btn btn-primary mt-3">
 							Next
 					</button>
-				</form> 
+				</form>  
 				<!-- ====== form end ====== -->
 
 			</div>

@@ -27,7 +27,7 @@ include "data-collector.php";
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
 				Question Two
 			</div>
 		</div>
@@ -36,7 +36,7 @@ include "data-collector.php";
 		<div class="row text-center">
 
 			<!-- ====== question-col ====== -->
-			<div class="col-md-6 bg-secondary text-white p-3, border-right">
+			<div class="col-md-6 bg-secondary text-white p-3 border-right">
 				Do you take nutritional supplements?
 			</div>
 

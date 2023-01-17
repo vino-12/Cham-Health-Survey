@@ -1,3 +1,9 @@
+<?php
+
+include "data-collector.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +17,36 @@
 </head>
 <body>
 
-    <div class="container mt-3">
-        <h2>Three Unequal Columns</h2>
-        <p>To create unequal columns, you have to use numbers. The following example will create a 25%/50%/25% split:</p>
-        <div class="row">
-            <div class="col-md-3 bg-success">.col-3</div>
-            <div class="col-md-6 bg-warning">.col-6</div>
-            <div class="col-md-3 bg-success">.col-3</div>
-        </div>
-    </div>
-    
+	<!-- ===== Top header and Navbar include ===== --->
+	<?php
+		 include 'headerAndNav.php';
+	?>
+
+	<!-- ===== Question-box ===== --->
+	<div class="container mt-3 pt-5">
+
+		<!-- ====== question-box top-row ====== -->
+		<div class="row">
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
+				Evaluation
+			</div>
+		</div>
+
+	
+			<!-- ====== question-box bottom-row ====== -->
+		<div class="row text-center">
+
+			<!-- ====== evaluation text ====== -->
+			<div class="col-md-12 bg-secondary text-white p-3 border-right">
+				blabla
+			</div>
+			
+		</div>
+	</div>	
+	
+	<!-- ===== footer include ===== --->
+	<?php
+		include 'footer.php';
+	?>
+
 </body>

@@ -104,7 +104,7 @@ include "data-collector.php";
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
-			<div class="col-sm-12 bg-info text-white text-center p-3">
+			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
 				Question Three
 			</div>
 		</div>
@@ -121,7 +121,10 @@ include "data-collector.php";
 			<div class="col-md-6 bg-secondary text-white p-3 text-center">
 
 				<!-- ====== form start ====== -->
-				<form action="question-3.php" class="text-center" method="post">
+				<form action="question-5.php" class="text-center" method="post">
+
+					<input type="hidden" name="lastPageID" value="question-4">
+
 					<div class="form-check text-start">
 						<input type="radio" class="form-check-input" id="q3-radio1" name="q3-radio" value="option1" checked>No additional physical activity
 						<label class="form-check-label radioYes" for="q3-radio1">
