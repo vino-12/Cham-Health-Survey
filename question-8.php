@@ -28,19 +28,40 @@ include "data-collector.php";
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
 			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
-				Evaluation
+				Question Eight
 			</div>
 		</div>
 
-	
-			<!-- ====== question-box bottom-row ====== -->
+		<!-- ====== question-box bottom-row ====== -->
 		<div class="row text-center">
 
-			<!-- ====== evaluation text ====== -->
-			<div class="col-md-12 bg-secondary text-white p-3 border-right">
-				blabla
+			<!-- ====== question-col ====== -->
+			<div class="col-md-6 bg-secondary text-white p-3 border-right">
+				On a typical day, how many of your meals or snacks contain vegetables?
 			</div>
-			
+
+			<!-- ====== form-col ====== -->
+			<div class="col-md-6 bg-secondary text-white p-3 text-center">
+
+				<!-- ====== form start ====== -->
+				<form action="question-9.php" class="text-center" method="post">
+
+					<div class="form-check text-start">
+
+						<input type="text" class="form-check-input text-center" id="q8Num" name="inputNum" value="" checked>please enter a number
+						<label class="form-check-label" for="q8Num">
+						</label>
+					</div>
+
+					<input type="hidden" name="lastPageID" value="question-8">
+					
+					<button type="submit" class="btn btn-primary mt-3">
+							Next
+					</button>
+				</form>
+				<!-- ====== form end ====== -->
+
+			</div>
 		</div>
 	</div>	
 	

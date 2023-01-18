@@ -1,45 +1,83 @@
-.rangeSteps {
-    font-style: italic;
-    color:deeppink;
+.rangeStep1 {
+  font-style: italic;
+  color:deeppink;
+}
+.rangeStep2 {
+font-style: italic;
+color:lightpink;
+}
+.rangeStep3 {
+font-style: italic;
+color:white;
+}
+.rangeStep4 {
+font-style: italic;
+color:rgb(178, 255, 229);
+}
+.rangeStep5 {
+font-style: italic;
+color:chartreuse;
+}
+
+.radioYes {
+  color:chartreuse
+}
+
+.radioNo {
+  color:red
 }
 
 .heroFontSize {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: rgb(154, 53, 53);
-  }
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(154, 53, 53);
+}
 
-  .logo {
-    height: 58px;
-  }
+.logo {
+  height: 50px;
+}
 
-  .fontSizeRange {
-    font-size: 10px;
-  }
+.fontSizeRange {
+  font-size: 10px;
+}
+
+.footerTextSmall {
+  font-size: 10px;
+}
+
+.spacingFooterItems {
+  justify-content: space-between;
+}
+
+.bgStart {
+  background-color:rgb(39, 39, 249);
+}
+.bgPrev {
+  background-color:darkblue;
+}
 
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/healthSurveyHeroImg.png");
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .header {
-    background-color: aqua;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/healthSurveyHeroImg.png");
   
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  background-color: aqua;
+}

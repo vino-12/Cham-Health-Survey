@@ -1,10 +1,8 @@
 <?php
-	/* initialisiere die Session. Auf der Index-Seite, welche die erste Frage und damit den Beginn der Umfrage anzeigt, sollen alle vorherigen Daten gelöscht werden.
-	*/
-	session_start();
-	session_destroy();
 
-	?>
+include "data-collector.php";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,17 +16,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+	<!-- ===== Top header and Navbar include ===== --->
 	<?php
 		 include 'headerAndNav.php';
 	?>
 
-	<!-- ====== question-box ====== -->
+	<!-- ===== Question-box ===== --->
 	<div class="container mt-3 pt-5">
 
 		<!-- ====== question-box top-row ====== -->
 		<div class="row">
 			<div class="col-sm-12 bg-info text-white text-center p-3 h5">
-				Question One
+				Question Five
 			</div>
 		</div>
 
@@ -37,42 +37,40 @@
 
 			<!-- ====== question-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3 border-right">
-				How healthy are you physically? 
+				Do you feel you do too little, just enough or way too much additional physical activity?
 			</div>
 
 			<!-- ====== form-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3">
 
 				<!-- ====== form start ====== -->
-				<form action="question-2.php" method="post">
-
+				<form action="question-6.php" method="post">
 					<label for="customRange" class="form-label">
-						Please choose one of these 5 answers:
+						Please choose 1 of these 5 answers:
 					</label>
+					<input type="range" class="form-range" id="customRange" step="25" name="answer-5">
 
-					<input type="range" class="form-range" id="customRange" step="25" name="answer-1">
+					<input type="hidden" name="lastPageID" value="question-5">
 
-					<input type="hidden" name="lastPageID" value="question-1">
-
-					<div class="container p-0 m-0">
-						<div class="row fontSizeRange p-0 m-0">
-							<div class="col-2 text-left rangeStep1">
-									couch<br>potato
-							</div>	
-							<div class="col-3 text-left rangeStep2">
-									so-so<br>no-so
-							</div>
-							<div class="col-2 text-center rangeStep3">
-									average Joe
-							</div>
-							<div class="col-3 text-center rangeStep4">
-									aight'<br>I guess
-							</div>
-							<div class="col-2 text-right pr-0 mr-0 rangeStep5">
-								You're a<br>machine!
+						<div class="container p-0 m-0">
+							<div class="row fontSizeRange p-0 m-0">
+								<div class="col-2 text-left rangeStep1">
+									way too<br> little
+								</div>	
+								<div class="col-3 text-left rangeStep2">
+									could<br>be more
+								</div>
+								<div class="col-2 text-center rangeStep3">
+										just right
+								</div>
+								<div class="col-3 text-center rangeStep4">
+										I should<br>slow down
+								</div>
+								<div class="col-2 text-right pr-0 mr-0 rangeStep5">
+									I'm a<br>fitness addict!
+								</div>
 							</div>
 						</div>
-					</div>
 					<button type="submit" class="btn btn-primary mt-3">
 							Next
 					</button>
@@ -81,11 +79,11 @@
 
 			</div>
 		</div>
-	</div>
-
-	<?php
-		include 'footer.php'
-	?> 
-
+	</div>	
 	
+	<!-- ===== footer include ===== --->
+	<?php
+		include 'footer.php';
+	?>
+
 </body>
