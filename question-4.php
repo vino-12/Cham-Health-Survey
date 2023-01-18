@@ -50,58 +50,58 @@ include "data-collector.php";
 					<input type="hidden" name="lastPageID" value="question-4">
 
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio1" name="q4-radio" value="option1" checked>No additional physical activity
-						<label class="form-check-label radioYes" for="q4-radio1">
+						<input type="checkbox" class="form-check-input" id="checkbox-1" name="checkbox-1" value="option1">None
+						<label class="form-check-label radioYes" for="checkbox-1">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio2" name="q4-radio" value="option2">Lifting weights
-						<label class="form-check-label radioNo" for="q4-radio2">
+						<input type="checkbox" class="form-check-input" id="checkbox-2" name="checkbox-2" value="Lifting weights">Lifting weights
+						<label class="form-check-label radioNo" for="checkbox-2">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio3" name="q4-radio" value="option3">Walking
-						<label class="form-check-label" for="q4-radio3">
+						<input type="checkbox" class="form-check-input" id="checkbox-3" name="checkbox-3" value="Walking">Walking
+						<label class="form-check-label" for="checkbox-3">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio4" name="q4-radio" value="option4">Jogging
-						<label class="form-check-label" for="q4-radio4">
+						<input type="checkbox" class="form-check-input" id="checkbox-4" name="checkbox-4" value="Jogging">Jogging
+						<label class="form-check-label" for="checkbox-4">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio5" name="q4-radio" value="option5">Running
-						<label class="form-check-label" for="q4-radio5">
+						<input type="checkbox" class="form-check-input" id="checkbox-5" name="checkbox-5" value="Running">Running
+						<label class="form-check-label" for="checkbox-5">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio6" name="q4-radio" value="option6">Swimming
-						<label class="form-check-label" for="q4-radio6">
+						<input type="checkbox" class="form-check-input" id="checkbox-6" name="checkbox-6" value="Swimming">Swimming
+						<label class="form-check-label" for="checkbox-6">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio7" name="q4-radio" value="option7">Dancing
-						<label class="form-check-label" for="q4-radio7">
+						<input type="checkbox" class="form-check-input" id="checkbox-7" name="checkbox-7" value="Dancing">Dancing
+						<label class="form-check-label" for="checkbox-7">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio8" name="q4-radio" value="option8">Aerobics
-						<label class="form-check-label" for="q4-radio8">
+						<input type="checkbox" class="form-check-input" id="checkbox-8" name="checkbox-8" value="Aerobics">Aerobics
+						<label class="form-check-label" for="checkbox-8">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio9" name="q4-radio" value="option9">Pilates
-						<label class="form-check-label" for="q4-radio9">
+						<input type="checkbox" class="form-check-input" id="checkbox-9" name="checkbox-9" value="Pilates">Pilates
+						<label class="form-check-label" for="checkbox-9">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio10" name="q4-radio" value="option10">Pilates
-						<label class="form-check-label" for="q4-radio10">
+						<input type="checkbox" class="form-check-input" id="checkbox-10" name="checkbox-10" value="teamSports">Team Sports
+						<label class="form-check-label" for="checkbox-10">
 						</label>
 					</div>
 					<div class="input-group mb-3">
     					<div class="input-group-text">
-      						<input type="radio" class="form-check-input" id="q4-radio11" name="q4-radio">
+      						<input type="checkbox" class="form-check-input" id="checkbox-11" name="checkbox11" >
     					</div>
     					<input type="text" class="form-control" placeholder="other activity">
   					</div>
@@ -119,48 +119,7 @@ include "data-collector.php";
 	<!-- ===== footer include ===== --->
 	<?php
 		include 'footer.php';
-	?>
-
-</body>check text-start">
-						<input type="radio" class="form-check-inputPilates" id="q4-radio7" name="q4-radio" value="option7">Dancing
-						<label class="form-check-label" for="q4-radio7">
-						</label>
-					</div>
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio8" name="q4-radio" value="option8">Aerobics
-						<label class="form-check-label" for="q4-radio8">
-						</label>
-					</div>
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio9" name="q4-radio" value="option9">Pilates
-						<label class="form-check-label" for="q4-radio9">
-						</label>
-					</div>
-					<div class="form-check text-start">
-						<input type="radio" class="form-check-input" id="q4-radio10" name="q4-radio" value="option10">Team Sports
-						<label class="form-check-label" for="q4-radio10">
-						</label>
-					</div>
-					<div class="input-group mb-3">
-    					<div class="input-group-text">
-      						<input type="radio" class="form-check-input" id="q4-radio11" name="q4-radio">
-    					</div>
-    					<input type="text" class="form-control" placeholder="other activity">
-  					</div>
-
-					<button type="submit" class="btn btn-primary mt-3 ">
-							Next
-					</button>
-				</form> 
-				<!-- ====== form end ====== -->
-
-			</div>
-		</div>
-	</div>	
-	
-	<!-- ===== footer include ===== --->
-	<?php
-		include 'footer.php';
+		prettyPrint($_SESSION);
 	?>
 
 </body>
