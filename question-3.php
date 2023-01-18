@@ -84,6 +84,8 @@ include "data-collector.php";
 	<!-- ===== footer include ===== --->
 	<?php
 		include 'footer.php';
+
+		prettyPrint($_SESSION);
 	?>
 
 </body>
