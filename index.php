@@ -51,6 +51,7 @@
 						Please choose one of these 5 answers:
 					</label>
 
+
 					<input type="range" class="form-range" id="customRange" step="20" min="0" max="100" value="0" name="answer-1">
 
 <div class="container p-0 m-0">
