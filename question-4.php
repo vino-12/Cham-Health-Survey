@@ -50,60 +50,60 @@ include "data-collector.php";
 					<input type="hidden" name="lastPageID" value="question-4">
 
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-1" name="checkbox-1" value="option1">None
+						<input type="checkbox" class="form-check-input" id="checkbox-1" name="answer1" value="option1">None
 						<label class="form-check-label radioYes" for="checkbox-1">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-2" name="checkbox-2" value="Lifting weights">Lifting weights
+						<input type="checkbox" class="form-check-input" id="checkbox-2" name="answer2" value="Lifting weights">Lifting weights
 						<label class="form-check-label radioNo" for="checkbox-2">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-3" name="checkbox-3" value="Walking">Walking
+						<input type="checkbox" class="form-check-input" id="checkbox-3" name="answer3" value="Walking">Walking
 						<label class="form-check-label" for="checkbox-3">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-4" name="checkbox-4" value="Jogging">Jogging
+						<input type="checkbox" class="form-check-input" id="checkbox-4" name="answer4" value="Jogging">Jogging
 						<label class="form-check-label" for="checkbox-4">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-5" name="checkbox-5" value="Running">Running
+						<input type="checkbox" class="form-check-input" id="checkbox-5" name="answer5" value="Running">Running
 						<label class="form-check-label" for="checkbox-5">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-6" name="checkbox-6" value="Swimming">Swimming
+						<input type="checkbox" class="form-check-input" id="checkbox-6" name="answer6" value="Swimming">Swimming
 						<label class="form-check-label" for="checkbox-6">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-7" name="checkbox-7" value="Dancing">Dancing
+						<input type="checkbox" class="form-check-input" id="checkbox-7" name="answer7" value="Dancing">Dancing
 						<label class="form-check-label" for="checkbox-7">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-8" name="checkbox-8" value="Aerobics">Aerobics
+						<input type="checkbox" class="form-check-input" id="checkbox-8" name="answer8" value="Aerobics">Aerobics
 						<label class="form-check-label" for="checkbox-8">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-9" name="checkbox-9" value="Pilates">Pilates
+						<input type="checkbox" class="form-check-input" id="checkbox-9" name="answer9" value="Pilates">Pilates
 						<label class="form-check-label" for="checkbox-9">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-10" name="checkbox-10" value="teamSports">Team Sports
+						<input type="checkbox" class="form-check-input" id="checkbox-10" name="answer10" value="teamSports">Team Sports
 						<label class="form-check-label" for="checkbox-10">
 						</label>
 					</div>
 					<div class="input-group mb-3">
     					<div class="input-group-text">
-      						<input type="checkbox" class="form-check-input" id="checkbox-11" name="checkbox11" >
+      						<input type="checkbox" class="form-check-input" id="checkbox-11" name="answer11" >
     					</div>
-    					<input type="text" class="form-control" placeholder="other activity">
+    					<input type="text" class="form-control" placeholder="other activity" name="answer11Text" value="">
   					</div>
 
 					<button type="submit" class="btn btn-primary mt-3">

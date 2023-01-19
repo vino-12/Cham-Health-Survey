@@ -48,7 +48,7 @@ include "data-collector.php";
 					<label for="customRange" class="form-label">
 						Please choose 1 of these 5 answers:
 					</label>
-					<input type="range" class="form-range" id="customRange" step="25" name="answer-5">
+					<input type="range" class="form-range" id="customRange" step="25" name="answer">
 
 					<input type="hidden" name="lastPageID" value="question-5">
 

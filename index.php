@@ -50,7 +50,7 @@
 						Please choose one of these 5 answers:
 					</label>
 
-					<input type="range" class="form-range" id="customRange" step="25" name="answer-1">
+					<input type="range" class="form-range" id="customRange" step="25" name="answer">
 
 					<input type="hidden" name="lastPageID" value="question-1">
 

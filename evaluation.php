@@ -16,6 +16,47 @@ include "data-collector.php";
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+	<?php 
+
+
+		
+
+		/*function($question) {
+
+			$sum = $val10
+
+		}*/
+
+		$val = 0;
+
+		$val1 = $_SESSION['question-1']['answer'];
+		$val2 = $_SESSION['question-2']['answer'];
+		$val3 = $_SESSION['question-3']['answer'];
+		$val4 = $_SESSION['question-4']['answer'];
+		$val5 = $_SESSION['question-5']['answer'];
+		$val6 = $_SESSION['question-6']['answer'];
+		$val7 = $_SESSION['question-7']['answer'];
+		$val8 = $_SESSION['question-8']['answer'];
+		$val9 = $_SESSION['question-9']['answer'];
+		$val10 = $_SESSION['question-10']['answer'];
+
+
+	
+		
+		$sum = $val1 + $val2 + $val3 + $val4 + $val5 + $val6 + $val7 + $val8 + $val9 + $val10;
+
+		print_r($sum);
+
+
+		
+		//$q10 = $_SESSION['question-10'];
+		//$val10 = $q10['answer'];
+		//print_r($val10);
+	
+		//$_SESSION["answer-1"];
+		//print_r($answer1);
+
+	?>
 
 	<!-- ===== Top header and Navbar include ===== --->
 	<?php

@@ -22,3 +22,15 @@ function sliderHasChanged() {
     if (hiddenInputElement.value === "1") return true;
     else return false;
 }
+
+
+// let formId = "form-6";
+// let inputId = "q6Num";
+
+function notEmpty() {
+    let x = document.forms[formId][inputId].value;
+    if (x == "") {
+    alert("Name must be filled out");
+    return false;
+}
+}

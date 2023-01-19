@@ -43,12 +43,29 @@ include "data-collector.php";
 			<!-- ====== form-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3 text-center">
 
+			<script>
+
+	//JS Validation checking if form is filled with a 1-digit number
+
+	var formId = "form-7";
+	var inputId = "q7Num";
+	const regExOneDigit = /^[0-9]$/;
+
+	function valOneDigit() {
+		let x = document.forms[formId][inputId].value;
+		if (!x.match(regExOneDigit)) {
+			alert("please provide a one digit number!");
+			return false;
+		}
+	}
+
+</script>
 				<!-- ====== form start ====== -->
-				<form action="question-8.php" class="text-center" method="post">
+				<form id="form-7" action="question-8.php" onsubmit="return valOneDigit()" class="text-center" method="post">
 
 					<div class="form-check text-start">
 
-						<input type="text" class="form-check-input text-center" id="q7Num" name="inputNum" value="" checked>please enter a number
+						<input type="text" class="form-check-input text-center" id="q7Num" name="answer" value="" checked>please enter a number
 						<label class="form-check-label" for="q7Num">
 						</label>
 					</div>

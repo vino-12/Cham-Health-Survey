@@ -18,6 +18,15 @@ if (isset($_POST["lastPageID"])) {
 
 }
 
+    // Question-4.php need to calculate one value 'answer' out of multiple checkboxes name='answer1'/'answer2'... 
+
+    /*$q4 = $_SESSION['question-4'];
+    $pattern = "/answer[1-11]/";
+    $val = $q4['$pattern'];
+    print_r($val);
+    
+    echo preg_match_all($pattern, $val);*/
+
 // DEVONLY: gib die aktuelle $_SESSION in die Seite aus. prettyPrint() ist nur zum testen da.
 // prettyPrint($_SESSION);
 
