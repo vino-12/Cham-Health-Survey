@@ -42,40 +42,48 @@ $_SESSION['answer11'];*/
 		//	$val10 = $q10['answer'];
 		//	print_r($val10);
 
-		$val1 = $_SESSION['question-1']['answer'];
-		$val2 = $_SESSION['question-2']['answer'];
-		$val3 = $_SESSION['question-3']['answer'];
+		$val1 = $_SESSION['question-1']['answer'] ?? 0;
+		$val2 = $_SESSION['question-2']['answer'] ?? 0;
+		$val3 = $_SESSION['question-3']['answer'] ?? 0;
 		// $val41 = $_SESSION['question-4']['answer1'];
-		$val42 = $_SESSION['question-4']['answer2'];
-		$val43 = $_SESSION['question-4']['answer3'];
-		$val44 = $_SESSION['question-4']['answer4'];
-		$val45 = $_SESSION['question-4']['answer5'];
-		$val46 = $_SESSION['question-4']['answer6'];
-		$val47 = $_SESSION['question-4']['answer7'];
-		$val48 = $_SESSION['question-4']['answer8'];
-		$val49 = $_SESSION['question-4']['answer9'];
-		$val410 = $_SESSION['question-4']['answer10'];
-		$val411 = $_SESSION['question-4']['answer11'];
+			
+		/*
+		if array_key_exists('answer2', $_SESSION['question-4']) {
+			$val42 = $_SESSION['question-4']['answer2'];	
+		} else {
+			$val42 = 0; 
+		}*/
 
-		$val5 = $_SESSION['question-5']['answer'];
-		$val6 = $_SESSION['question-6']['answer'];
-		$val7 = $_SESSION['question-7']['answer'];
-		$val8 = $_SESSION['question-8']['answer'];
-		$val9 = $_SESSION['question-9']['answer'];
-		$val10 = $_SESSION['question-10']['answer'];
+		$val42 = $_SESSION['question-4']['answer2'] ?? 0;
+		$val43 = $_SESSION['question-4']['answer3'] ?? 0; 
+		$val44 = $_SESSION['question-4']['answer4'] ?? 0;
+		$val45 = $_SESSION['question-4']['answer5'] ?? 0;
+		$val46 = $_SESSION['question-4']['answer6'] ?? 0;
+		$val47 = $_SESSION['question-4']['answer7'] ?? 0;
+		$val48 = $_SESSION['question-4']['answer8'] ?? 0;
+		$val49 = $_SESSION['question-4']['answer9'] ?? 0;
+		$val410 = $_SESSION['question-4']['answer10'] ?? 0;
+		$val411 = $_SESSION['question-4']['answer11'] ?? 0;
+
+		$val5 = $_SESSION['question-5']['answer'] ?? 0; 
+		$val6 = $_SESSION['question-6']['answer'] ?? 0;
+		$val7 = $_SESSION['question-7']['answer'] ?? 0;
+		$val8 = $_SESSION['question-8']['answer'] ?? 0;
+		$val9 = $_SESSION['question-9']['answer'] ?? 0;
+		$val10 = $_SESSION['question-10']['answer'] ?? 0;
 
 
 		
 		
 		$sum = ($val1 + $val2 + $val3 + $val42 + $val43 + $val44 + $val45 + $val46 + $val47 + $val48 + $val49 + $val410 + $val411 + $val5 + ($val6*20) + ($val7*20) + ($val8*20) + ($val9*20) + ($val10*20));
 
-		print_r($sum);
+		// print_r($sum);
 
 
 
 			function generateResultText($sum) {
 				
-				$textUnhealthy = "Your physique requires some serious intervention! Come to our gym, we will put your ... into motion!";
+				$textUnhealthy = "Your physique requires some serious intervention! Come to our gym, we will put your a.. into motion!";
 
 				$textAverage = "Not bad... but a beach body would better, wouldn't it? Come to our gym, we'll show you the quickest path there!";
 
@@ -85,19 +93,19 @@ $_SESSION['answer11'];*/
 				
 				if ($sum < 333) {
 
-					print $textUnhealthy; 
+					echo $textUnhealthy; 
 					
 				}
 
 				elseif ($sum < 666) {
 
-					print $textAverage;
+					echo $textAverage;
 
 				}
 
 				else {
 
-					print $textHealthy;
+					echo $textHealthy;
 
 				}
 			}
@@ -137,7 +145,7 @@ $_SESSION['answer11'];*/
 				
 				<?php
 
-					generateResultText();
+					generateResultText($sum);
 
 				?>
 
@@ -149,7 +157,7 @@ $_SESSION['answer11'];*/
 	<!-- ===== footer include ===== --->
 	<?php
 		include 'footer.php';
-		prettyPrint($_SESSION);
+		// prettyPrint($_SESSION);
 	?>
 
 </body>

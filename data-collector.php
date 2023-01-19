@@ -3,7 +3,7 @@
 session_start();
 
 // Hilfswerkzeuge laden
-include 'tools.php';
+// include 'tools.php';
 
 //gehört auf jede Frageseite
 if (isset($_POST["lastPageID"])) {

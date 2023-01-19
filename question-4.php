@@ -48,13 +48,6 @@ include "data-collector.php";
 
 
 			<!-- ====== form start ====== -->
-=======
-				<!-- ====== form start ====== -->
-                
-                <!-- Get all checkboxes -->
-				
-
-
 
 
 				<form action="question-5.php" class="text-center" method="post">
