@@ -46,16 +46,24 @@ $_SESSION['answer11'];*/
 		$val2 = $_SESSION['question-2']['answer'];
 		$val3 = $_SESSION['question-3']['answer'];
 		// $val41 = $_SESSION['question-4']['answer1'];
-		$val42 = $_SESSION['question-4']['answer2'];
-		$val43 = $_SESSION['question-4']['answer3'];
-		$val44 = $_SESSION['question-4']['answer4'];
-		$val45 = $_SESSION['question-4']['answer5'];
-		$val46 = $_SESSION['question-4']['answer6'];
-		$val47 = $_SESSION['question-4']['answer7'];
-		$val48 = $_SESSION['question-4']['answer8'];
-		$val49 = $_SESSION['question-4']['answer9'];
-		$val410 = $_SESSION['question-4']['answer10'];
-		$val411 = $_SESSION['question-4']['answer11'];
+			
+		/*
+		if array_key_exists('answer2', $_SESSION['question-4']) {
+			$val42 = $_SESSION['question-4']['answer2'];	
+		} else {
+			$val42 = 0; 
+		}*/
+
+		$val42 = $_SESSION['question-4']['answer2'] ?? 0;
+		$val43 = $_SESSION['question-4']['answer3'] ?? 0; 
+		$val44 = $_SESSION['question-4']['answer4'] ?? 0;
+		$val45 = $_SESSION['question-4']['answer5'] ?? 0;
+		$val46 = $_SESSION['question-4']['answer6'] ?? 0;
+		$val47 = $_SESSION['question-4']['answer7'] ?? 0;
+		$val48 = $_SESSION['question-4']['answer8'] ?? 0;
+		$val49 = $_SESSION['question-4']['answer9'] ?? 0;
+		$val410 = $_SESSION['question-4']['answer10'] ?? 0;
+		$val411 = $_SESSION['question-4']['answer11'] ?? 0;
 
 		$val5 = $_SESSION['question-5']['answer'];
 		$val6 = $_SESSION['question-6']['answer'];
@@ -85,19 +93,19 @@ $_SESSION['answer11'];*/
 				
 				if ($sum < 333) {
 
-					print $textUnhealthy; 
+					echo $textUnhealthy; 
 					
 				}
 
 				elseif ($sum < 666) {
 
-					print $textAverage;
+					echo $textAverage;
 
 				}
 
 				else {
 
-					print $textHealthy;
+					echo $textHealthy;
 
 				}
 			}
@@ -137,7 +145,7 @@ $_SESSION['answer11'];*/
 				
 				<?php
 
-					generateResultText();
+					generateResultText($sum);
 
 				?>
 
