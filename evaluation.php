@@ -45,7 +45,7 @@ $_SESSION['answer11'];*/
 		$val1 = $_SESSION['question-1']['answer'];
 		$val2 = $_SESSION['question-2']['answer'];
 		$val3 = $_SESSION['question-3']['answer'];
-		$val41 = $_SESSION['question-4']['answer1'];
+		// $val41 = $_SESSION['question-4']['answer1'];
 		$val42 = $_SESSION['question-4']['answer2'];
 		$val43 = $_SESSION['question-4']['answer3'];
 		$val44 = $_SESSION['question-4']['answer4'];
@@ -64,13 +64,43 @@ $_SESSION['answer11'];*/
 		$val9 = $_SESSION['question-9']['answer'];
 		$val10 = $_SESSION['question-10']['answer'];
 
-		print_r($val45);
-		print_r($val10);
-	
+
 		
-		$sum = $val1 + $val2 + $val3 + $val41 + $val42 + $val43 + $val44 + $val45 + $val46 + $val47 + $val48 + $val49 + $val410 + $val411 + $val5 + ($val6*20) + ($val7*20) + ($val8*20) + ($val9*20) + ($val10*20);
+		
+		$sum = ($val1 + $val2 + $val3 + $val42 + $val43 + $val44 + $val45 + $val46 + $val47 + $val48 + $val49 + $val410 + $val411 + $val5 + ($val6*20) + ($val7*20) + ($val8*20) + ($val9*20) + ($val10*20));
 
 		print_r($sum);
+
+
+
+			function generateResultText($sum) {
+				
+				$textUnhealthy = "Your physique requires some serious intervention! Come to our gym, we will put your ... into motion!";
+
+				$textAverage = "Not bad... but a beach body would better, wouldn't it? Come to our gym, we'll show you the quickest path there!";
+
+				$textHealthy = "Congratulations! You're quite the stunner! Would you like to stay that way, even if the years go by? Come to our gym, we'll show you how to stay forever young!";
+
+			
+				
+				if ($sum < 333) {
+
+					print $textUnhealthy; 
+					
+				}
+
+				elseif ($sum < 666) {
+
+					print $textAverage;
+
+				}
+
+				else {
+
+					print $textHealthy;
+
+				}
+			}
 
 
 		
@@ -104,7 +134,13 @@ $_SESSION['answer11'];*/
 
 			<!-- ====== evaluation text ====== -->
 			<div class="col-md-12 bg-secondary text-white p-3 border-right">
-				blabla
+				
+				<?php
+
+					generateResultText();
+
+				?>
+
 			</div>
 			
 		</div>
