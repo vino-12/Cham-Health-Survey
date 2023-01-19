@@ -15,6 +15,7 @@ include "data-collector.php";
     <script src="scripts/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
 </head>
 <body>
 
@@ -45,6 +46,12 @@ include "data-collector.php";
 			<div class="col-md-6 bg-secondary text-white p-3 text-center">
 
 				<!-- ====== form start ====== -->
+                
+                <!-- Get all checkboxes -->
+				
+
+
+
 				<form action="question-5.php" class="text-center" method="post">
 
 					<input type="hidden" name="lastPageID" value="question-4">
@@ -110,6 +117,10 @@ include "data-collector.php";
 							Next
 					</button>
 				</form> 
+
+
+
+
 				<!-- ====== form end ====== -->
 
 			</div>
@@ -121,5 +132,58 @@ include "data-collector.php";
 		include 'footer.php';
 		prettyPrint($_SESSION);
 	?>
+	<script>
+      // Get all checkboxes
+      var checkboxes = document.querySelectorAll("input[type='checkbox']");
+
+      // Get the "None" checkbox
+      var noneCheckbox = document.getElementById("checkbox-1");
+
+      // Add an event listener to the "None" checkbox
+      noneCheckbox.addEventListener("change", function() {
+        // If the "None" checkbox is checked
+        if (noneCheckbox.checked) {
+          // Loop through all checkboxes
+          for (var i = 0; i < checkboxes.length; i++) {
+            // If the checkbox is not the "None" checkbox
+            if (checkboxes[i] != noneCheckbox) {
+              // Disable the checkbox
+              checkboxes[i].disabled = true;
+              checkboxes[i].checked = false;
+            }
+          }
+        } else {
+          // Loop through all checkboxes
+          for (var i = 0; i < checkboxes.length; i++) {
+            // If the checkbox is not the "None" checkbox
+            if (checkboxes[i] != noneCheckbox) {
+              // Enable the checkbox
+              checkboxes[i].disabled = false;
+            }
+          }
+        }
+      });
+
+      // Add an event listener to the form
+      var form = document.querySelector("form");
+      form.addEventListener("submit", function(e) {
+        var atLeastOneChecked = false;
+
+        // Loop through all checkboxes
+        for (var i = 0; i < checkboxes.length; i++) {
+          // If the checkbox is checked
+          if (checkboxes[i].checked) {
+            atLeastOneChecked = true;
+          }
+        }
+
+        // If no checkbox is checked
+        if (!atLeastOneChecked) {
+          // Prevent the form from submitting
+          e.preventDefault();
+          alert("Please select at least one option");
+        }
+      });
+    </script>
 
 </body>
