@@ -16,6 +16,7 @@
     <script src="scripts/script.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
 </head>
 <body>
 	<?php
@@ -50,32 +51,33 @@
 						Please choose one of these 5 answers:
 					</label>
 
-					<input type="range" class="form-range" id="customRange" step="25" name="answer-1">
+					<input type="range" class="form-range" id="customRange" step="20" min="0" max="100" value="0" name="answer-1">
 
-					<input type="hidden" name="lastPageID" value="question-1">
+<div class="container p-0 m-0">
+    <div class="row fontSizeRange p-0 m-0">
+        <div class="col-2 text-left rangeStep1">
+                Please Select
+        </div>   
+        <div class="col-2 text-left rangeStep2">
+		        couch<br>potato
+        </div>
+        <div class="col-2 text-center rangeStep3">
+                so-so
+        </div>
+        <div class="col-2 text-center rangeStep4">
+                pretty good
+        </div>
+        <div class="col-2 text-center rangeStep5">
+                aight'<br>I guess
+        </div>
+        <div class="col-2 text-right pr-0 mr-0 rangeStep6">
+            You're a<br>machine!
+        </div>
+    </div>
+	<div class="text-center" id="prompt" style="display:none;">Please move the slider</div>
+<button type="submit" class="btn btn-primary mt-3" id="submitBtn" disabled>Next</button>
 
-					<div class="container p-0 m-0">
-						<div class="row fontSizeRange p-0 m-0">
-							<div class="col-2 text-left rangeStep1">
-									couch<br>potato
-							</div>	
-							<div class="col-3 text-left rangeStep2">
-									so-so<br>no-so
-							</div>
-							<div class="col-2 text-center rangeStep3">
-									average Joe
-							</div>
-							<div class="col-3 text-center rangeStep4">
-									aight'<br>I guess
-							</div>
-							<div class="col-2 text-right pr-0 mr-0 rangeStep5">
-								You're a<br>machine!
-							</div>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-primary mt-3">
-							Next
-					</button>
+					
 				</form>  
 				<!-- ====== form end ====== -->
 
@@ -86,6 +88,21 @@
 	<?php
 		include 'footer.php'
 	?> 
+
+<!-- ===== J.S form Validation ===== --->
+    <script>
+     document.getElementById("customRange").addEventListener("input", function() {
+      if (this.value == 0) {
+       document.getElementById("prompt").style.display = "block";
+        document.getElementById("submitBtn").disabled = true;
+       } 
+	   else {
+        document.getElementById("prompt").style.display = "none";
+         document.getElementById("submitBtn").disabled = false;
+              }
+          });
+</script>
+
 
 	
 </body>

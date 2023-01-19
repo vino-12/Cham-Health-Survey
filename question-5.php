@@ -48,32 +48,34 @@ include "data-collector.php";
 					<label for="customRange" class="form-label">
 						Please choose 1 of these 5 answers:
 					</label>
-					<input type="range" class="form-range" id="customRange" step="25" name="answer-5">
+					<input type="range" class="form-range" id="customRange" step="20" min="0" max="100" value="0" name="answer-5">
 
 					<input type="hidden" name="lastPageID" value="question-5">
 
 						<div class="container p-0 m-0">
 							<div class="row fontSizeRange p-0 m-0">
 								<div class="col-2 text-left rangeStep1">
-									way too<br> little
+									Please Select
 								</div>	
-								<div class="col-3 text-left rangeStep2">
-									could<br>be more
+								<div class="col-2 text-left rangeStep2">
+								way too<br> little
 								</div>
 								<div class="col-2 text-center rangeStep3">
-										just right
+								could<br>be more
 								</div>
-								<div class="col-3 text-center rangeStep4">
-										I should<br>slow down
+								<div class="col-2 text-center rangeStep4">
+								just right
 								</div>
-								<div class="col-2 text-right pr-0 mr-0 rangeStep5">
-									I'm a<br>fitness addict!
+								<div class="col-2 text-center rangeStep5">
+								I should<br>slow down
 								</div>
+								<div class="col-2 text-right pr-0 mr-0 rangeStep6">
+								I'm a<br>fitness addict!
+                                </div>
 							</div>
 						</div>
-					<button type="submit" class="btn btn-primary mt-3">
-							Next
-					</button>
+						<div class="text-center" id="prompt" style="display:none;">Please move the slider</div>
+                            <button type="submit" class="btn btn-primary mt-3" id="submitBtn" disabled>Next</button>
 				</form>  
 				<!-- ====== form end ====== -->
 
@@ -86,5 +88,18 @@ include "data-collector.php";
 		include 'footer.php';
 		prettyPrint($_SESSION);
 	?>
+
+	<!-- ===== J.S form Validation ===== --->
+	  <script>
+document.getElementById("customRange").addEventListener("input", function() {
+  if (this.value == 0) {
+    document.getElementById("prompt").style.display = "block";
+    document.getElementById("submitBtn").disabled = true;
+  } else {
+    document.getElementById("prompt").style.display = "none";
+    document.getElementById("submitBtn").disabled = false;
+  }
+});
+</script>
 
 </body>
