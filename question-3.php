@@ -88,7 +88,7 @@ include "data-collector.php";
 	<?php
 		include 'footer.php';
 
-		prettyPrint($_SESSION);
+		// prettyPrint($_SESSION);
 	?>
 	<!-- ===== J.S form Validation ===== --->
     <script>
