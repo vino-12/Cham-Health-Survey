@@ -50,18 +50,13 @@ include "data-collector.php";
 						
 
 					<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1">
-
-							Yes
-						<label class="form-check-label radioYes" for="radio1">
-						</label>
-
+                    <label class="form-check-label radioYes" for="radio1">Yes</label>
 					</div>
-
+                   
 					<div class="form-check text-start">
-						
-						<input type="radio" class="form-check-input" id="radio2" name="answer" value="0">No
-						<label class="form-check-label radioNo" for="radio2">
-						</label>
+			
+					<input type="radio" class="form-check-input text-center" id="radio2" name="optradio" value="option2">
+                    <label class="form-check-label radioNo" for="radio2"> No </label>
 
 					</div>
 
