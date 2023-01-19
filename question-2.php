@@ -48,7 +48,9 @@ include "data-collector.php";
 
 					<div class="form-check text-start">
 						
-						<input type="radio" class="form-check-input text-center" id="radio1" name="answer" value="100" checked>
+
+					<input type="radio" class="form-check-input text-center" id="radio1" name="optradio" value="option1">
+
 							Yes
 						<label class="form-check-label radioYes" for="radio1">
 						</label>
@@ -82,4 +84,23 @@ include "data-collector.php";
 		prettyPrint($_SESSION);
 
 	?>
+
+
+     <!-- ===== J.S form Validation ===== --->
+     <script>
+         document.querySelector("form").addEventListener("submit", function(event) {
+        var radioButtons = document.querySelectorAll("input[name='optradio']");
+        var isChecked = false;
+        for (var i = 0; i < radioButtons.length; i++) {
+            if (radioButtons[i].checked) {
+                isChecked = true;
+                break;
+            }
+        }
+        if (!isChecked) {
+            alert("Please select an option");
+            event.preventDefault();
+        }
+          });
+    </script>
 </body>
