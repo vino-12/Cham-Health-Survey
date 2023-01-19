@@ -88,6 +88,8 @@ include "data-collector.php";
 		include 'footer.php';
 		prettyPrint($_SESSION);
 	?>
+
+	<!-- ===== J.S form Validation ===== --->
 	  <script>
 document.getElementById("customRange").addEventListener("input", function() {
   if (this.value == 0) {

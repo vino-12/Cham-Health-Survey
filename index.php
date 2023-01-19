@@ -88,16 +88,19 @@
 	<?php
 		include 'footer.php'
 	?> 
-<script>
-document.getElementById("customRange").addEventListener("input", function() {
-  if (this.value == 0) {
-    document.getElementById("prompt").style.display = "block";
-    document.getElementById("submitBtn").disabled = true;
-  } else {
-    document.getElementById("prompt").style.display = "none";
-    document.getElementById("submitBtn").disabled = false;
-  }
-});
+
+<!-- ===== J.S form Validation ===== --->
+    <script>
+     document.getElementById("customRange").addEventListener("input", function() {
+      if (this.value == 0) {
+       document.getElementById("prompt").style.display = "block";
+        document.getElementById("submitBtn").disabled = true;
+       } 
+	   else {
+        document.getElementById("prompt").style.display = "none";
+         document.getElementById("submitBtn").disabled = false;
+              }
+          });
 </script>
 
 
