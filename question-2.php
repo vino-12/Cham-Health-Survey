@@ -48,7 +48,7 @@ include "data-collector.php";
 
 					<div class="form-check text-start">
 						
-						<input type="radio" class="form-check-input text-center" id="radio1" name="answer" value="Yes" checked>
+						<input type="radio" class="form-check-input text-center" id="radio1" name="answer" value="100" checked>
 							Yes
 						<label class="form-check-label radioYes" for="radio1">
 						</label>
@@ -57,7 +57,7 @@ include "data-collector.php";
 
 					<div class="form-check text-start">
 						
-						<input type="radio" class="form-check-input" id="radio2" name="answer" value="No">No
+						<input type="radio" class="form-check-input" id="radio2" name="answer" value="0">No
 						<label class="form-check-label radioNo" for="radio2">
 						</label>
 

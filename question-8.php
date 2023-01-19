@@ -60,6 +60,8 @@ function valOneDigit() {
 }
 
 </script>			
+
+
 				<!-- ====== form start ====== -->
 				<form action="question-9.php" onsubmit="return valOneDigit()" class="text-center" method="post" id="form-8">
 

@@ -44,67 +44,86 @@ include "data-collector.php";
 			<!-- ====== form-col ====== -->
 			<div class="col-md-6 bg-secondary text-white p-3 text-center">
 
-				<!-- ====== form start ====== -->
+<?php
+
+$_SESSION['answer1'] = 0;
+$_SESSION['question4']['answer2'] = 0;
+$_SESSION['question4']['answer3'] = 0;
+$_SESSION['question4']['answer4'] = 0;
+$_SESSION['question4']['answer5'] = 0;
+$_SESSION['question4']['answer6'] = 0;
+$_SESSION['question4']['answer7'] = 0;
+$_SESSION['question4']['answer8'] = 0;
+$_SESSION['question4']['answer9'] = 0;
+$_SESSION['question4']['answer10'] = 0;
+$_SESSION['question4']['answer11'] = 0;
+
+print_r($_SESSION['question4']['answer2']);
+
+
+?>
+			<!-- ====== form start ====== -->
 				<form action="question-5.php" class="text-center" method="post">
 
 					<input type="hidden" name="lastPageID" value="question-4">
 
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-1" name="answer1" value="option1">None
+						<input type="checkbox" class="form-check-input" id="checkbox-1" name="answer1" value="0">None
 						<label class="form-check-label radioYes" for="checkbox-1">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-2" name="answer2" value="Lifting weights">Lifting weights
+						<input type="checkbox" class="form-check-input" id="checkbox-2" name="answer2" value="10">Lifting weights
 						<label class="form-check-label radioNo" for="checkbox-2">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-3" name="answer3" value="Walking">Walking
+						<input type="checkbox" class="form-check-input" id="checkbox-3" name="answer3" value="10">Walking
 						<label class="form-check-label" for="checkbox-3">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-4" name="answer4" value="Jogging">Jogging
+						<input type="checkbox" class="form-check-input" id="checkbox-4" name="answer4" value="10">Jogging
 						<label class="form-check-label" for="checkbox-4">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-5" name="answer5" value="Running">Running
+						<input type="checkbox" class="form-check-input" id="checkbox-5" name="answer5" value="10">Running
 						<label class="form-check-label" for="checkbox-5">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-6" name="answer6" value="Swimming">Swimming
+						<input type="checkbox" class="form-check-input" id="checkbox-6" name="answer6" value="10">Swimming
 						<label class="form-check-label" for="checkbox-6">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-7" name="answer7" value="Dancing">Dancing
+						<input type="checkbox" class="form-check-input" id="checkbox-7" name="answer7" value="10">Dancing
 						<label class="form-check-label" for="checkbox-7">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-8" name="answer8" value="Aerobics">Aerobics
+						<input type="checkbox" class="form-check-input" id="checkbox-8" name="answer8" value="10">Aerobics
 						<label class="form-check-label" for="checkbox-8">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-9" name="answer9" value="Pilates">Pilates
+						<input type="checkbox" class="form-check-input" id="checkbox-9" name="answer9" value="10">Pilates
 						<label class="form-check-label" for="checkbox-9">
 						</label>
 					</div>
 					<div class="form-check text-start">
-						<input type="checkbox" class="form-check-input" id="checkbox-10" name="answer10" value="teamSports">Team Sports
+						<input type="checkbox" class="form-check-input" id="checkbox-10" name="answer10" value="10">Team Sports
 						<label class="form-check-label" for="checkbox-10">
 						</label>
 					</div>
 					<div class="input-group mb-3">
     					<div class="input-group-text">
-      						<input type="checkbox" class="form-check-input" id="checkbox-11" name="answer11" >
+      						<input type="checkbox" class="form-check-input" id="checkbox-11" name="answer11" value="10">
     					</div>
     					<input type="text" class="form-control" placeholder="other activity" name="answer11Text" value="">
   					</div>
+
 
 					<button type="submit" class="btn btn-primary mt-3">
 							Next
@@ -112,9 +131,12 @@ include "data-collector.php";
 				</form> 
 				<!-- ====== form end ====== -->
 
+
 			</div>
 		</div>
 	</div>	
+
+	
 	
 	<!-- ===== footer include ===== --->
 	<?php
