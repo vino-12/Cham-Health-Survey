@@ -83,9 +83,9 @@ $_SESSION['answer11'];*/
 
 			function generateResultText($sum) {
 				
-				$textUnhealthy = "Your physique requires some serious intervention! Come to our gym, we will put your a.. into motion!";
+				$textUnhealthy = "Your physique requires some serious intervention! Come to our gym, we will put your a** into motion!";
 
-				$textAverage = "Not bad... but a beach body would better, wouldn't it? Come to our gym, we'll show you the quickest path there!";
+				$textAverage = "Not bad... but a beach body would be better, wouldn't it? Come to our gym, we'll show you the quickest path there!";
 
 				$textHealthy = "Congratulations! You're quite the stunner! Would you like to stay that way, even if the years go by? Come to our gym, we'll show you how to stay forever young!";
 
