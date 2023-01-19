@@ -46,19 +46,18 @@ include "data-collector.php";
 
 <?php
 
-$_SESSION['answer1'] = 0;
-$_SESSION['question4']['answer2'] = 0;
-$_SESSION['question4']['answer3'] = 0;
-$_SESSION['question4']['answer4'] = 0;
-$_SESSION['question4']['answer5'] = 0;
-$_SESSION['question4']['answer6'] = 0;
-$_SESSION['question4']['answer7'] = 0;
-$_SESSION['question4']['answer8'] = 0;
-$_SESSION['question4']['answer9'] = 0;
-$_SESSION['question4']['answer10'] = 0;
-$_SESSION['question4']['answer11'] = 0;
+$_SESSION['question-4']['answer1'] = 0;
+$_SESSION['question-4']['answer2'] = 0;
+$_SESSION['question-4']['answer3'] = 0;
+$_SESSION['question-4']['answer4'] = 0;
+$_SESSION['question-4']['answer5'] = 0;
+$_SESSION['question-4']['answer6'] = 0;
+$_SESSION['question-4']['answer7'] = 0;
+$_SESSION['question-4']['answer8'] = 0;
+$_SESSION['question-4']['answer9'] = 0;
+$_SESSION['question-4']['answer10'] = 0;
+$_SESSION['question-4']['answer11'] = 0;
 
-print_r($_SESSION['question4']['answer2']);
 
 
 ?>
